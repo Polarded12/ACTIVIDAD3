@@ -11,7 +11,7 @@ class pedidosRepository {
     }
     create(data) {
         const nuevoPedido = {
-            id: this.currentId++,
+            id: this.nextId++,
             producto: data.producto,
             cantidad: data.cantidad,
             estado: "pendiente" //el objeto siempre va a iniciar en pendiente
